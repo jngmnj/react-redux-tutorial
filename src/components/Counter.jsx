@@ -1,6 +1,8 @@
 import React from 'react'
+import { decrease, increase } from '../modules/counter'
 
 const Counter = ({ number, onIncrease, onDecrease }) => {
+  // console.log(number, onIncrease, onDecrease)
   return (
     <div>
         <h1>{ number }</h1>
