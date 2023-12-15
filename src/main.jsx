@@ -5,9 +5,8 @@ import './index.css'
 import rootReducer from './modules/index.js'
 import { legacy_createStore as createStore } from 'redux'
 import { Provider } from 'react-redux'
-import { composeWithDevTools } from 'redux-devtools-extension';
 
-const store = createStore(rootReducer,composeWithDevTools());
+const store = createStore(rootReducer);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Provider store={store}>
